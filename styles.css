@@ -1,0 +1,28 @@
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  border-bottom: 1px solid #444;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}

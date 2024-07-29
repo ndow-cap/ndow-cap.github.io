@@ -1,1 +1,47 @@
-"my porfolio"
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<nav>
+  <ul>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="contacts">Contacts</a></li>
+  </ul>
+</nav>
+</html> 
+
+
+<!-- Profile section -->
+<section id="profile">
+  <h1>My Profile</h1>
+  <p>This is my profile section.</p>
+</section>
+
+<!-- Projects section -->
+<section id="projects">
+  <h1>My Projects</h1>
+  <div>
+    <!-- Loop through projects array and display each project -->
+    {#projects.map((project) => (
+      <div key={project.id}>
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+<!-- Contacts section -->
+<section id="contacts">
+  <h1>Get in Touch</h1>
+  <ul>
+    <li><a href="mailto:your@email.com">Email Me</a></li>
+    <li><a href="https://www.linkedin.com/in/yourlinkedinprofile/">LinkedIn Profile</a></li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer>Copyright &copy; Your Name, 2023</footer>
+
